@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 function ArtContainer(props) {
 
     const renderContent = () => {
-        return props.content.map(cont => <Card content={cont}/>)
+        return props.content.map(cont => <Card key={cont.id} content={cont}/>)
     }
     return (
         <>
