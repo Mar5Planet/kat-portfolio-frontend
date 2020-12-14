@@ -6,7 +6,7 @@ function Login(props) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     return (
-        <Form onSubmit={(e) => {
+        <Form className="admin-login" onSubmit={(e) => {
             e.preventDefault()
             props.submitAdmin(username, password)}}>
             <Form.Group controlId="formBasicEmail">
@@ -18,11 +18,11 @@ function Login(props) {
                 <Form.Label>Password</Form.Label>
                 <Form.Control value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
             </Form.Group>
-            <Button variant="info" type="submit">
+            <Button variant="outline-info" type="submit">
                 Submit
             </Button>
             {' '}
-            <Button onClick={() => props.setLogin(false)} variant="warning" type="button">
+            <Button onClick={() => props.setLogin(false)} variant="outline-dark" type="button">
                Cancel
             </Button>
         </Form>)

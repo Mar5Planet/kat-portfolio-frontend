@@ -9,15 +9,15 @@ function ArtContainer(props) {
         return props.content.map(cont => <Card key={cont.id} content={cont}/>)
     }
     return (
-        <>
-        <h1>Art Container</h1>
+        <div id="art" className="display-container">
+        <h1>Art + Design</h1>
+        {props.loggedIn? <button>+</button> : ''}
         <Container>
             <Row>
         {renderContent()}
-
             </Row>
         </Container>
-        </>
+        </div>
 
     )
 }

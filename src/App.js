@@ -12,6 +12,7 @@ const contentUrl = 'http://localhost:3000/contents/';
 
 function App() {
   const [login, setLogin] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
   const [content, setContent] = useState([])
   const [artContent, setArtContent] = useState([])
   const [exhibitContent, setExhibitContent] = useState([])
@@ -34,6 +35,7 @@ function App() {
     .then(data => {
       if (data.valid){
         setLogin(false);
+        setLoggedIn(true);
         localStorage.setItem('valid', data.valid)
       }
     })
@@ -62,8 +64,8 @@ function App() {
     {login? <Login setLogin={setLogin} submitAdmin={adminFetch}/> : ''}
     <Navg/>
     <TopSection />
-    <ArtContainer content={artContent} />
-    <ExhibitContainer content={exhibitContent} />
+    <ArtContainer loggedIn={loggedIn} content={artContent} />
+    <ExhibitContainer loggedIn={loggedIn} content={exhibitContent} />
     <About />
     </>
   );

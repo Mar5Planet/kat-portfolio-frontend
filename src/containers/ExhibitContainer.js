@@ -10,15 +10,15 @@ function ExhibitContainer(props) {
     }
     
     return (
-        <>
-        <h1>Exhibit Container</h1>
+        <div id="exhibition" className="display-container">
+        <h1>Exhibition</h1>
         <Container>
             <Row>
         {renderContent()}
 
             </Row>
         </Container>
-        </>
+        </div>
     )
 }
 export default ExhibitContainer;
