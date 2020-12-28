@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from '../components/Card'
-import Row from 'react-bootstrap/Row' 
-import Container from 'react-bootstrap/Container' 
-
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 function ArtContainer(props) {
 
     const renderContent = () => {

@@ -1,27 +1,39 @@
 import React, {useState, useEffect} from 'react';
+import { Switch, Route } from 'react-router-dom';
 import ExhibitContainer from './containers/ExhibitContainer';
 import ArtContainer from './containers/ArtContainer';
 import Navg from './components/Navg';
 import TopSection from './components/Top';
 import About from './components/About';
 import Login from './components/Login';
+import Content from './containers/ContentContainer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-const contentUrl = 'http://localhost:3000/contents/';
 
+const contentUrl = 'http://localhost:3000/contents/';
+const imagesUrl = 'http://localhost:3000/images';
 function App() {
   const [login, setLogin] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [content, setContent] = useState([])
   const [artContent, setArtContent] = useState([])
   const [exhibitContent, setExhibitContent] = useState([])
+  const [images, setImages] = useState([]);
+
   const fetchContent = () => {
     fetch(contentUrl).then(res => res.json()).then(data => {
       setContent(data)
       setArtContent(data.filter(cont => cont.category === "art"))
       setExhibitContent(data.filter(cont => cont.category === "exhibit"))
     })
+  }
+
+  const fetchImages = () => {
+    fetch(imagesUrl).then(res => res.json()).then(data => {
+      setImages(data)
+      console.log(data)
+    })  
   }
 
   const adminFetch = (username, password) => {
@@ -57,16 +69,22 @@ function App() {
     detectKeyPress()
     localStorage.clear()
     fetchContent()
+    fetchImages()
   }, [])
 
   return (
     <>
     {login? <Login setLogin={setLogin} submitAdmin={adminFetch}/> : ''}
     <Navg/>
-    <TopSection />
-    <ArtContainer loggedIn={loggedIn} content={artContent} />
-    <ExhibitContainer loggedIn={loggedIn} content={exhibitContent} />
-    <About />
+    <Switch>
+      <Route path="/" exact>
+        <TopSection />
+        <ArtContainer loggedIn={loggedIn} content={artContent} />
+        <ExhibitContainer loggedIn={loggedIn} content={exhibitContent} />
+        <About />
+      </Route>
+      <Route path={`/content/:id`} render={(matchProps) =><Content images={images} allContent={content} content={matchProps}/>} />
+    </Switch>
     </>
   );
 }
