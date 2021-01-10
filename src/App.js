@@ -4,11 +4,12 @@ import ExhibitContainer from './containers/ExhibitContainer';
 import ArtContainer from './containers/ArtContainer';
 import Navg from './components/Navg';
 import TopSection from './components/Top';
-import About from './components/About';
 import Login from './components/Login';
 import Content from './containers/ContentContainer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
+import AboutDrawer from './components/Drawer';
+import 'antd/dist/antd.css'
 
 
 const contentUrl = 'http://localhost:3000/contents/';
@@ -32,7 +33,6 @@ function App() {
   const fetchImages = () => {
     fetch(imagesUrl).then(res => res.json()).then(data => {
       setImages(data)
-      console.log(data)
     })  
   }
 
@@ -81,7 +81,7 @@ function App() {
         <TopSection />
         <ArtContainer loggedIn={loggedIn} content={artContent} />
         <ExhibitContainer loggedIn={loggedIn} content={exhibitContent} />
-        <About />
+        <AboutDrawer />
       </Route>
       <Route path={`/content/:id`} render={(matchProps) =><Content images={images} allContent={content} content={matchProps}/>} />
     </Switch>
