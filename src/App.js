@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Switch, Route } from 'react-router-dom';
 import ExhibitContainer from './containers/ExhibitContainer';
 import ArtContainer from './containers/ArtContainer';
 import Navg from './components/Navg';
@@ -76,15 +75,10 @@ function App() {
     <>
     {login? <Login setLogin={setLogin} submitAdmin={adminFetch}/> : ''}
     <Navg/>
-    <Switch>
-      <Route path="/" exact>
         <TopSection />
         <ArtContainer loggedIn={loggedIn} content={artContent} />
         <ExhibitContainer loggedIn={loggedIn} content={exhibitContent} />
         <AboutDrawer />
-      </Route>
-      <Route path={`/content/:id`} render={(matchProps) =><Content images={images} allContent={content} content={matchProps}/>} />
-    </Switch>
     </>
   );
 }

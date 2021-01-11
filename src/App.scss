@@ -1,16 +1,38 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .top-section {
     padding: 5% 0;
     height: 40vh;
     text-align: center;
     display: block;
 }
+// Card
+.card-img-top {
+    height: 18rem;
+}
 
+.card-body {
+    height: 60px;
+}
 /* Art and Exhibition Section */
+.km-logo {
+    width: 100px;
+}
+
+.navbar {
+    padding: 1% 4%;
+}
+
+.nav-link {
+    width: 120px;
+}
 
 .card {
     margin-bottom: 10% !important;
     margin: auto;
-    width: 16rem !important;
+    width: 20rem !important;
 }
 
 .card:hover {
