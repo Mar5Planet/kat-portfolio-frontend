@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 function contentCard(props) {
     return (
         <Col lg="4" md="6">
-                <Card style={{ width: '18rem' }}>
+                <Card onClick={() => props.setCurrentContent(props.content)} style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={props.content.img} />
                 <Card.Body>
                     <Card.Title>{props.content.title}</Card.Title>

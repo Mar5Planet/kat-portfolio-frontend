@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import KatLogo from '../images/KMLogo.png';
+import KatLogo from '../image/KATlogo-white.png';
 // import from 'react-bootstrap/NavbarCollapse'
 
 function Navg() {
 
 
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Navbar.Brand href="#home"><img className="km-logo" src={KatLogo} alt="KMLogo" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

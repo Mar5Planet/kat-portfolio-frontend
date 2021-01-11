@@ -1,12 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Raleway:wght@100;200;300;700;800;900&display=swap');
+
 html {
     scroll-behavior: smooth;
+    // cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1089.cur), auto !important;
+    // cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur271.cur), auto !important;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur671.cur), auto !important;
   }
+body {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+.ny-background {
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(rgba(19, 15, 15, 0.452), rgba(255, 255, 255, 0)), url(https://media2.giphy.com/media/E1qYtxkdzpy4U/giphy.gif);
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1000;
+}
 
 .top-section {
-    padding: 5% 0;
+    font-family: 'Raleway';
+    padding: 13% 0 40%;
     height: 40vh;
     text-align: center;
     display: block;
+}
+.top-section h1 {
+    color: white !important;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.top-section h4 {
+    color: white !important;
 }
 // Card
 .card-img-top {
@@ -26,7 +57,16 @@ html {
 }
 
 .nav-link {
+    font-weight: 600 !important;
+    font-size: 1rem !important;
     width: 120px;
+    font-weight: 400;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgba(195, 195, 195, 0.691) !important;
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }
 
 .card {
@@ -37,7 +77,7 @@ html {
 
 .card:hover {
     transform: scale(1.05);
-    cursor: pointer;
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }
 
 .display-container {
@@ -97,6 +137,7 @@ div.arrow {
 	}
 	
 	&:hover::after {
+        cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 		transform: rotate(45deg);
 		border-color: rgb(179, 82, 98);
 		height: 100%;
@@ -107,4 +148,39 @@ div.arrow {
 		
 	}
 	
+}
+
+// Modal
+.d-block {
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto !important;
+    margin: auto;
+    height: auto;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.609);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.609);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
 }

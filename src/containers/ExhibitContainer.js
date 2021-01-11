@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 function ExhibitContainer(props) {
 
     const renderContent = () => {
-        return props.content.map(cont => <Card key={cont.id} content={cont}/>)
+        return props.content.map(cont => <Card setCurrentContent={props.setCurrentContent} key={cont.id} content={cont}/>)
     }
     
     return (
