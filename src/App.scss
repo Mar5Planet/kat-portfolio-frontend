@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Raleway:wght@100;200;300;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 html {
     scroll-behavior: smooth;
     // cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1089.cur), auto !important;
@@ -7,7 +7,7 @@ html {
     cursor: url(https://cur.cursors-4u.net/cursors/cur-7/cur671.cur), auto !important;
   }
 body {
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'Varela', sans-serif;
     text-transform: uppercase !important;
 }
 
@@ -38,6 +38,7 @@ body {
 
 .top-section h4 {
     color: white !important;
+    font-weight: 500;
 }
 // Card
 .card-img-top {
@@ -58,7 +59,7 @@ body {
 
 .nav-link {
     font-weight: 600 !important;
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     width: 120px;
     font-weight: 400;
     color: white !important;
@@ -183,4 +184,38 @@ div.arrow {
 .carousel-control-prev,
 .carousel-control-next {
     cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
+}
+
+// Drawer
+.ant-drawer-content-wrapper {
+    height: 60vh !important;
+}
+
+.about-text {
+    text-transform: none !important;
+    width: 50%;
+    float: left;
+    font-size: 1rem;
+}
+
+.ant-drawer-body img {
+    float: right;
+    width: 30%;
+}
+
+.ant-drawer-body {
+    padding: 4% 10% 2% !important;
+}
+
+.about-footer {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.ant-modal-body {
+    text-transform: none !important;
+}
+
+.card-title {
+    font-size: 0.9rem;
 }

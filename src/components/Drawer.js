@@ -1,5 +1,6 @@
 import { Drawer } from 'antd';
 import React, {useState} from 'react';
+import AboutPic from '../image/0.jpg';
 
 const AboutDrawer = () => {
     const [visible, setVisible] = useState(false);
@@ -25,7 +26,19 @@ const AboutDrawer = () => {
           visible={visible}
           key={placement}
         >
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla ipsum nunc, euismod eleifend mauris consectetur eget. Integer faucibus malesuada elit nec sodales. In in condimentum nunc. Mauris ac accumsan quam. Mauris quis erat ante. Nam dapibus mauris vitae nulla facilisis, a auctor orci egestas. Quisque neque mi, facilisis id dignissim a, tincidunt sed mauris. Quisque eu eros sit amet augue pretium gravida vitae in purus. Pellentesque rhoncus, risus et vehicula dapibus, lacus purus venenatis massa, non ultrices mauris ligula eget urna. Ut ultricies, orci ac mattis placerat, lacus arcu pulvinar enim, id bibendum purus lorem ut nulla. In elit orci, tempor eget tellus vel, vehicula auctor urna. Proin posuere ullamcorper bibendum. Donec vel malesuada ex, in bibendum est.</p>
+            <div className="about-text">
+
+            <h3>Hi, you can call me Kat. </h3>
+            <p>  I’m an artist, designer, and creative based in New York, NY. </p>
+
+          <p>
+            Versed in an extensive range of creative and fabrication processes, I do a bit of everything: digital design, illustration, printmaking, woodworking—If I don’t already know the skill, I’m already excited to learn.   
+            I’m dedicated to successfully telling meaningful stories in original ways, with the intention to reimagine the possibilities of visual expression and brand experience. A daydreamer by nature, I thrive in environments where work meets play. 
+            </p>
+            <br/>
+            <p className="about-footer">Media & Journalism and Studio Art graduate from the University of North Carolina at Chapel Hill</p>
+            </div>
+            <img src={AboutPic} alt="about-me" />
         
         </Drawer>
       </>

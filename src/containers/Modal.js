@@ -3,15 +3,16 @@ import { Modal} from 'antd';
 import ImageCarousel from '../components/ImageCarousel';
 const KatModal = (props) => {
     const [isModalVisible, setIsModalVisible] = useState(true);
-    const images = [{
+    const images = [
+      {
+        id: 4,
+        img: 'https://i.ibb.co/gSCmPZm/NYCPoster.png',
+        contentId: 2
+      },
+      {
       id: 1,
       img: 'https://i.ibb.co/VVmdKBT/Screen-Shot-2021-01-10-at-11-01-35-PM.png',
       contentId: 2
-    },
-    {
-      id: 2,
-      img: 'https://i.ibb.co/qx3RDML/Screen-Shot-2021-01-10-at-9-50-03-PM.png',
-      contentId: 3
     },
     {
       id: 3,
@@ -19,9 +20,14 @@ const KatModal = (props) => {
       contentId: 3
     },
     {
-      id: 4,
-      img: 'https://i.ibb.co/gSCmPZm/NYCPoster.png',
-      contentId: 2
+      id: 2,
+      img: 'https://i.ibb.co/qx3RDML/Screen-Shot-2021-01-10-at-9-50-03-PM.png',
+      contentId: 3
+    },
+    {
+      id: 18,
+      img: 'https://i.ibb.co/S6br4Jn/NYCcardlayout.png',
+      contentId: 1
     },
     {
       id: 5,
@@ -37,6 +43,11 @@ const KatModal = (props) => {
       id: 7,
       img: 'https://i.ibb.co/WcVbrRN/vessel1.png',
       contentId: 1
+    },
+    {
+      id: 12,
+      img: 'https://i.ibb.co/CWykTFx/Anthro1.jpg',
+      contentId: 4
     },
     {
       id: 8,
@@ -56,11 +67,6 @@ const KatModal = (props) => {
     {
       id: 11,
       img: 'https://i.ibb.co/RbsL3T6/Anthro5.jpg',
-      contentId: 4
-    },
-    {
-      id: 12,
-      img: 'https://i.ibb.co/CWykTFx/Anthro1.jpg',
       contentId: 4
     },
     {
@@ -88,6 +94,7 @@ const KatModal = (props) => {
       img: 'https://i.ibb.co/DKT33Q3/Planet5.jpg',
       contentId: 5
     },
+   
     
     ];
 

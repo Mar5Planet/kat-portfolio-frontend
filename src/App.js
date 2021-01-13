@@ -19,18 +19,19 @@ function App() {
 
 
   const artContent = [
-    {id: 1,
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum leo urna, eu consectetur neque tempus in. Praesent lorem nisi, hendrerit vel risus vitae, mattis euismod purus. Aenean venenatis scelerisque tortor id dapibus. Morbi magna quam, mollis et tempus ut, fringilla at felis. Maecenas imperdiet dapibus tincidunt. Donec aliquet et nunc interdum dignissim. Aenean lobortis egestas lectus ut feugiat. Sed accumsan eu lacus vel gravida. Vivamus quis auctor enim. Aenean accumsan lorem non ligula sagittis laoreet. Nam laoreet fringilla dapibus. Nulla condimentum maximus nibh id vestibulum. Etiam iaculis neque at enim pulvinar, et maximus risus dapibus. In libero libero, molestie vel lorem sed, semper ultrices augue. Proin ac dapibus sem. Aenean eget odio nec ex vehicula tempor vel eu felis.',
-    title: 'NYC Nature Poster',
-    img: 'https://i.ibb.co/S6br4Jn/NYCcardlayout.png',
-    },
     {id: 2,
-      desc: 'Maecenas leo diam, luctus et risus sed, malesuada consequat dui. Phasellus iaculis mauris vitae purus hendrerit, eu ullamcorper quam maximus. Morbi ut lorem eu arcu consequat pulvinar. Nulla vestibulum vitae orci at semper. Cras tincidunt hendrerit mollis. Sed eu rutrum eros, non viverra libero. Fusce et imperdiet nulla, posuere congue mi. Suspendisse vitae massa eros. Nam aliquet finibus lacus sit amet egestas. Vivamus ut libero placerat leo tincidunt luctus at sed elit. Integer ullamcorper pharetra velit et pretium. Vivamus sagittis leo vitae turpis sodales tincidunt. Morbi euismod leo ac dui posuere, convallis volutpat nunc eleifend. Etiam at laoreet nunc. Mauris in augue tellus. Maecenas ex turpis, lacinia ut erat eget, hendrerit tincidunt quam.',
+      desc: '2020 quarantine provided a rare glimpse of a ghostly empty NYC. In the absence of people watching, I found myself drawn to the architecture and natural landscape of the city. Within the synergy of nature and our fabricated urban environment, I came to the understanding that the two are not strict binaries of each other. This illustrated poster reimagines iconic NYC landmarks as an integrated part of nature. The poster was drawn in Adobe Illustrator and designed to evoke a map-like look.  ',
       title: 'NYC Nature Postcards',
       img: 'https://i.ibb.co/gSCmPZm/NYCPoster.png',
-      },
+    },
+    {id: 1,
+      desc: 'A predecessor of the NYC Nature Poster, these postcard-size prints illustrate iconic New York City structures as part of nature. Designed in Adobe Illustrator, their graphic appearance emphasizes the resemblance between urban structures and natural forms. ',
+      title: 'NYC Nature Poster',
+      img: 'https://i.ibb.co/S6br4Jn/NYCcardlayout.png',
+    },
+
       {id: 3,
-        desc: 'Proin diam lacus, scelerisque a leo dictum, ultrices scelerisque purus. Vivamus et convallis neque. Vivamus tincidunt ultrices laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse placerat nunc orci, in venenatis orci ultrices ac. Sed eu viverra est. Nam dictum est lacus, tincidunt blandit nulla mollis hendrerit. Vestibulum fringilla eu turpis in tristique. Vestibulum dui turpis, egestas ut risus eu, gravida pellentesque tellus. Morbi sit amet lacus maximus nulla tristique mattis euismod eu dui. Suspendisse potenti.',
+        desc: 'AIRAVATA is a Washington, DC based music producer. Using imagery important to the artist, this self titled poster captures the intrigue of anonymity and balanced nature of AIRAVATA’s sound. The design was composed in Adobe Illustrator and Photoshop, then screen printed by hand in 7 layers.  ',
         title: 'Airavata poster design',
         img: 'https://i.ibb.co/f2ZKBrG/Airavata1.png',
         },
@@ -38,12 +39,12 @@ function App() {
 
   const exhibitContent = [
     {id: 4,
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas condimentum leo urna, eu consectetur neque tempus in. Praesent lorem nisi, hendrerit vel risus vitae, mattis euismod purus. Aenean venenatis scelerisque tortor id dapibus. Morbi magna quam, mollis et tempus ut, fringilla at felis. Maecenas imperdiet dapibus tincidunt. Donec aliquet et nunc interdum dignissim. Aenean lobortis egestas lectus ut feugiat. Sed accumsan eu lacus vel gravida. Vivamus quis auctor enim. Aenean accumsan lorem non ligula sagittis laoreet. Nam laoreet fringilla dapibus. Nulla condimentum maximus nibh id vestibulum. Etiam iaculis neque at enim pulvinar, et maximus risus dapibus. In libero libero, molestie vel lorem sed, semper ultrices augue. Proin ac dapibus sem. Aenean eget odio nec ex vehicula tempor vel eu felis.',
+      desc: 'Working with the Anthropologie visual display team meant creating art installations from scratch to accentuate the store’s seasonal collections. This deconstructed wind chime idea involved fabricating multiple metal pieces that would suspend from the ceiling into the store’s inventory vignettes. Copper metal pieces were individually aged to create a harmonious assembly that would catch the light as the viewer moved around it. The surface patina created a color story for the surrounding clothing collection.',
       title: 'Anthropologie In Store Display',
       img: 'https://i.ibb.co/CWykTFx/Anthro1.jpg',
       },
     {id: 5,
-      desc: 'Maecenas leo diam, luctus et risus sed, malesuada consequat dui. Phasellus iaculis mauris vitae purus hendrerit, eu ullamcorper quam maximus. Morbi ut lorem eu arcu consequat pulvinar. Nulla vestibulum vitae orci at semper. Cras tincidunt hendrerit mollis. Sed eu rutrum eros, non viverra libero. Fusce et imperdiet nulla, posuere congue mi. Suspendisse vitae massa eros. Nam aliquet finibus lacus sit amet egestas. Vivamus ut libero placerat leo tincidunt luctus at sed elit. Integer ullamcorper pharetra velit et pretium. Vivamus sagittis leo vitae turpis sodales tincidunt. Morbi euismod leo ac dui posuere, convallis volutpat nunc eleifend. Etiam at laoreet nunc. Mauris in augue tellus. Maecenas ex turpis, lacinia ut erat eget, hendrerit tincidunt quam.',
+      desc: 'The UNC Workroom FashionMash 2018-2019 Project “Fashion Good,” is a yearlong exploration of how fashion can bring positive change to the world. The project teamed up with brand partner Gucci to learn about initiatives in the industry. The first part of the project was the creation of a 2500 sq. ft. installation that focuses on sustainability. My team’s Planet Gucci concept used leftover fabrics to create an opening to the installation that visualized the worldwide impact of the textile industry. The abstract planet design was planned on a large grid. Frames were constructed, then the pattern was sewn and upholstered to have an abstracted, soft, furniture-like effect.',
       title: 'Planet Gucci',
       img: 'https://i.ibb.co/8svLZdP/Planet1.jpg',
     },
