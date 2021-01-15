@@ -240,6 +240,7 @@ div.arrow {
 }
 
 @media (max-width: 900px) {
+
     .ant-drawer-body {
         text-align: center;
     }
@@ -275,6 +276,9 @@ div.arrow {
 }
 
 @media (max-width: 1300px) {
+    .card-img-top {
+        height: 14rem !important;
+    }
     .ny-background {
         height: 65vh !important;
     }
@@ -283,17 +287,19 @@ div.arrow {
 }
 
 @media (max-width: 600px) {
+    
     .ny-background {
         height: 60vh !important;
     }
     .top-section h1 {
+        margin-top: 10% !important;
         font-size: 2rem !important;
     }
     .top-section h4 {
         font-size: 1rem !important;
     }
     .top-section {
-        margin-bottom: 60% !important;
+        margin-bottom: 50% !important;
     }
     .display-container h1 {
         font-size: 1.5rem;
