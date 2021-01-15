@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8d49392.chunk.css",
+    "main.css": "/static/css/main.49fb599c.chunk.css",
     "main.js": "/static/js/main.6c71a118.chunk.js",
     "main.js.map": "/static/js/main.6c71a118.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.04685f3e.js",
@@ -12,7 +12,7 @@
     "static/js/3.e46ecabc.chunk.js.map": "/static/js/3.e46ecabc.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.866a702a.chunk.css.map": "/static/css/2.866a702a.chunk.css.map",
-    "static/css/main.b8d49392.chunk.css.map": "/static/css/main.b8d49392.chunk.css.map",
+    "static/css/main.49fb599c.chunk.css.map": "/static/css/main.49fb599c.chunk.css.map",
     "static/js/2.cc09ee60.chunk.js.LICENSE.txt": "/static/js/2.cc09ee60.chunk.js.LICENSE.txt",
     "static/media/0.fd3ff072.jpg": "/static/media/0.fd3ff072.jpg",
     "static/media/KATlogo-white.ad8d7176.png": "/static/media/KATlogo-white.ad8d7176.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.04685f3e.js",
     "static/css/2.866a702a.chunk.css",
     "static/js/2.cc09ee60.chunk.js",
-    "static/css/main.b8d49392.chunk.css",
+    "static/css/main.49fb599c.chunk.css",
     "static/js/main.6c71a118.chunk.js"
   ]
 }
