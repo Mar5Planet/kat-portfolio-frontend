@@ -21,12 +21,12 @@ function App() {
   const artContent = [
     {id: 2,
       desc: '2020 quarantine provided a rare glimpse of a ghostly empty NYC. In the absence of people watching, I found myself drawn to the architecture and natural landscape of the city. Within the synergy of nature and our fabricated urban environment, I came to the understanding that the two are not strict binaries of each other. This illustrated poster reimagines iconic NYC landmarks as an integrated part of nature. The poster was drawn in Adobe Illustrator and designed to evoke a map-like look.  ',
-      title: 'NYC Nature Postcards',
+      title: 'NYC Nature Poster',
       img: 'https://i.ibb.co/gSCmPZm/NYCPoster.png',
     },
     {id: 1,
       desc: 'A predecessor of the NYC Nature Poster, these postcard-size prints illustrate iconic New York City structures as part of nature. Designed in Adobe Illustrator, their graphic appearance emphasizes the resemblance between urban structures and natural forms. ',
-      title: 'NYC Nature Poster',
+      title: 'NYC Nature Postcards',
       img: 'https://i.ibb.co/S6br4Jn/NYCcardlayout.png',
     },
 
