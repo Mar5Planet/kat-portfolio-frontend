@@ -283,6 +283,9 @@ div.arrow {
 }
 
 @media (max-width: 600px) {
+    .ny-background {
+        height: 60vh !important;
+    }
     .top-section h1 {
         margin-top: 15%;
         font-size: 2rem !important;
