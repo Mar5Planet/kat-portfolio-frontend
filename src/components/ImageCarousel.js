@@ -20,7 +20,7 @@ function ControlledCarousel(props) {
     };
   
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel interval={null} activeIndex={index} onSelect={handleSelect}>
         {renderImages()}
       </Carousel>
     );
