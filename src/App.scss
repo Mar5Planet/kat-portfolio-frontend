@@ -14,7 +14,7 @@ body {
 .ny-background {
     background-size: cover;
     background-position: top;
-    background-image: linear-gradient(rgba(19, 15, 15, 0.452), rgba(255, 255, 255, 0)), url(https://media2.giphy.com/media/E1qYtxkdzpy4U/giphy.gif);
+    background-image: linear-gradient(rgba(19, 15, 15, 0.452), rgba(255, 255, 255, 0)), url(https://media2.giphy.com/media/E1qYtxkdzpy4U/giphy.gif), ;
     width: 100vw;
     height: 80vh;
     position: absolute;
@@ -25,10 +25,12 @@ body {
 
 .top-section {
     font-family: 'Raleway';
-    padding: 13% 0 40%;
+    padding: 13% 0 10%;
+    margin-bottom: 16%;
     height: 40vh;
     text-align: center;
     display: block;
+    height: auto;
 }
 .top-section h1 {
     color: white !important;
@@ -52,6 +54,7 @@ body {
 .km-logo {
     width: 100px;
 }
+
 
 .navbar {
     padding: 1% 4%;
@@ -86,7 +89,7 @@ body {
 }
 
 .display-container h1 {
-    margin-bottom: 4%;
+    margin: 3% 0 8%;
     margin-left: 4%;
 }
 
@@ -187,6 +190,17 @@ div.arrow {
 }
 
 // Drawer
+.about-text a{
+    text-decoration: none;
+    color: rgb(33, 25, 25);
+    margin: 4% 2% 4% 0;
+}
+.about-text a:hover{
+    cursor: url(https://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
+ }
+.ant-drawer-body h3 {
+    margin: 2% 0;
+}
 .ant-drawer-content-wrapper {
     height: 60vh !important;
 }
@@ -204,6 +218,7 @@ div.arrow {
 }
 
 .ant-drawer-body {
+    font-weight: 500;
     padding: 4% 10% 2% !important;
 }
 
@@ -218,4 +233,68 @@ div.arrow {
 
 .card-title {
     font-size: 0.9rem;
+}
+
+.about-text p {
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .ant-drawer-body {
+        text-align: center;
+    }
+    .about-text {
+        float: none !important;
+        width: 100%;
+    }
+
+    .ant-drawer-body img {
+        float: none !important;
+        border-radius: 100%;
+    }
+
+    .ant-drawer-body h3 {
+        margin-bottom: 10%;
+        font-size: 1.3rem;
+    }
+    .ant-drawer-body p {
+        font-size: 0.8rem;
+    }
+    .display-container {
+        text-align: center;
+        padding: 2% 5% !important;
+    }
+
+    .display-container h1 {
+        margin: 12% 0  !important;
+    }
+    
+    .ny-background {
+        height: 60vh !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .ny-background {
+        height: 65vh !important;
+    }
+
+    .card {width: 16rem !important;}
+}
+
+@media (max-width: 600px) {
+    .top-section h1 {
+        margin-top: 15%;
+        font-size: 2rem !important;
+    }
+    .top-section h4 {
+        font-size: 1rem !important;
+    }
+    .top-section {
+        margin-bottom: 40% !important;
+    }
+    .display-container h1 {
+        font-size: 1.5rem;
+        margin: 15% 0 !important;
+    }
 }

@@ -1,10 +1,12 @@
 import { Drawer } from 'antd';
 import React, {useState} from 'react';
 import AboutPic from '../image/0.jpg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const AboutDrawer = () => {
     const [visible, setVisible] = useState(false);
-    const [placement, setPlacement] = useState('bottom')
+    const [placement, ] = useState('bottom')
 
   const showDrawer = () => {
     setVisible(true);
@@ -27,7 +29,13 @@ const AboutDrawer = () => {
           key={placement}
         >
             <div className="about-text">
-
+              <a  href="https://www.linkedin.com/in/katarina-miles/" >
+            <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a href="mailto:katarinamiles77@gmail.com" >
+            <FontAwesomeIcon icon={faEnvelopeSquare} />
+              </a>
+            
             <h3>Hi, you can call me Kat. </h3>
             <p>  I’m an artist, designer, and creative based in New York, NY. </p>
 
