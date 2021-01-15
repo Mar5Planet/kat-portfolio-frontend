@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kat-portfolio-frontend/static/css/main.26a170e7.chunk.css",
+    "main.js": "/kat-portfolio-frontend/static/js/main.6c71a118.chunk.js",
+    "main.js.map": "/kat-portfolio-frontend/static/js/main.6c71a118.chunk.js.map",
+    "runtime-main.js": "/kat-portfolio-frontend/static/js/runtime-main.d79ad6dc.js",
+    "runtime-main.js.map": "/kat-portfolio-frontend/static/js/runtime-main.d79ad6dc.js.map",
+    "static/css/2.866a702a.chunk.css": "/kat-portfolio-frontend/static/css/2.866a702a.chunk.css",
+    "static/js/2.2a7f1355.chunk.js": "/kat-portfolio-frontend/static/js/2.2a7f1355.chunk.js",
+    "static/js/2.2a7f1355.chunk.js.map": "/kat-portfolio-frontend/static/js/2.2a7f1355.chunk.js.map",
+    "static/js/3.e46ecabc.chunk.js": "/kat-portfolio-frontend/static/js/3.e46ecabc.chunk.js",
+    "static/js/3.e46ecabc.chunk.js.map": "/kat-portfolio-frontend/static/js/3.e46ecabc.chunk.js.map",
+    "index.html": "/kat-portfolio-frontend/index.html",
+    "static/css/2.866a702a.chunk.css.map": "/kat-portfolio-frontend/static/css/2.866a702a.chunk.css.map",
+    "static/css/main.26a170e7.chunk.css.map": "/kat-portfolio-frontend/static/css/main.26a170e7.chunk.css.map",
+    "static/js/2.2a7f1355.chunk.js.LICENSE.txt": "/kat-portfolio-frontend/static/js/2.2a7f1355.chunk.js.LICENSE.txt",
+    "static/media/0.fd3ff072.jpg": "/kat-portfolio-frontend/static/media/0.fd3ff072.jpg",
+    "static/media/KATlogo-white.ad8d7176.png": "/kat-portfolio-frontend/static/media/KATlogo-white.ad8d7176.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d79ad6dc.js",
+    "static/css/2.866a702a.chunk.css",
+    "static/js/2.2a7f1355.chunk.js",
+    "static/css/main.26a170e7.chunk.css",
+    "static/js/main.6c71a118.chunk.js"
+  ]
+}
