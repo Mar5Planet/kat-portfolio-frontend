@@ -4,16 +4,15 @@ import AboutPic from '../image/0.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-const AboutDrawer = () => {
-    const [visible, setVisible] = useState(false);
+const AboutDrawer = (props) => {
     const [placement, ] = useState('bottom')
 
   const showDrawer = () => {
-    setVisible(true);
+    props.setVisible(true);
   };
 
   const onClose = () => {
-    setVisible(false);
+    props.setVisible(false);
   };
 
 
@@ -25,7 +24,7 @@ const AboutDrawer = () => {
           placement={placement}
           closable={false}
           onClose={onClose}
-          visible={visible}
+          visible={props.visible}
           key={placement}
         >
             <div className="about-text">

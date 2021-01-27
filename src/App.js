@@ -16,6 +16,7 @@ function App() {
   // const [login, setLogin] = useState(false);
   // const [loggedIn, setLoggedIn] = useState(false);
   const [currentContent, setCurrentContent] = useState('');
+  const [drawerVisible, setDrawerVisible] = useState(false);
 
 
   const artContent = [
@@ -98,11 +99,11 @@ function App() {
     <>
     {currentContent? <Modal setContent={setCurrentContent} content={currentContent} /> : null}
     {/* {login? <Login setLogin={setLogin} submitAdmin={adminFetch}/> : ''} */}
-    <Navg/>
+    <Navg setVisible={setDrawerVisible} />
         <TopSection />
         <ArtContainer setCurrentContent={setCurrentContent} content={artContent} />
         <ExhibitContainer setCurrentContent={setCurrentContent} content={exhibitContent} />
-        <AboutDrawer />
+        <AboutDrawer setVisible={setDrawerVisible} visible={drawerVisible}/>
     </>
   );
 }

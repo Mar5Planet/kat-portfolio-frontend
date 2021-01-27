@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import KatLogo from '../image/KATlogo-white.png';
 // import from 'react-bootstrap/NavbarCollapse'
 
-function Navg() {
+function Navg(props) {
 
 
     return (
@@ -13,6 +13,7 @@ function Navg() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
+          <Nav.Link onClick={() => props.setVisible(true)}>About Me</Nav.Link>
             <Nav.Link href="#art">Art + Design</Nav.Link>
             <Nav.Link href="#exhibition">Exhibition</Nav.Link>
             <Nav.Link href="mailto:katarinamiles77@gmail.com">Contact</Nav.Link>
