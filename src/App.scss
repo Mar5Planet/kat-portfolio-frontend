@@ -17,9 +17,6 @@ body {
     background-image: linear-gradient(rgba(19, 15, 15, 0.452), rgba(255, 255, 255, 0)), url(https://media2.giphy.com/media/E1qYtxkdzpy4U/giphy.gif), ;
     width: 100vw;
     height: 80vh;
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: -1000;
 }
 
@@ -57,6 +54,8 @@ body {
 
 
 .navbar {
+    width: 100% !important;
+    position: absolute !important;
     padding: 1% 4%;
 }
 
