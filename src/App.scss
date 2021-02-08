@@ -239,8 +239,11 @@ div.arrow {
     font-weight: 500;
 }
 
-@media (max-width: 900px) {
-
+@media (max-width: 990px) {
+    .navbar-collapse {
+        background-color: rgba(2, 2, 2, 0.455) !important;
+        padding: 5% !important;
+    }
     .ant-drawer-body {
         text-align: center;
     }
